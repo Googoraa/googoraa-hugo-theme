@@ -1,0 +1,12 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+    <div class="more_articles"><i>
+        {{ if $pag.HasPrev }}
+        <a style="margin:0px 20px;" href="{{ $pag.Prev.URL }}" rel="prev" class="page-link">← ទំព័រ​មុន</a>
+        {{ end }}
+
+        {{ if $pag.HasNext }}
+        <a tyle="margin:0px 20px;" href="{{ $pag.Next.URL }}" rel="next" class="page-link">ទំព័រ​បន្ទាប់ →</a>
+        {{ end }}
+    </i></div>
+{{ end }}

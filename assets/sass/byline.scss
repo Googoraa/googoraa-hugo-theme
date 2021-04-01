@@ -1,0 +1,47 @@
+.byline {
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid #363636c2;
+  height: 48px;
+  width: auto;
+}
+
+.byline .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+
+  line-height: 1.6;
+}
+
+.info .name {
+  font-weight: bold;
+}
+
+.info .name:link,
+.info .name:visited {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.info .name:hover,
+.info .name:active {
+  color: white;
+  text-decoration: underline;
+}
+
+.info .description::before {
+  content: " | ";
+}
+
+.info .update::before {
+  content: " · ";
+}
