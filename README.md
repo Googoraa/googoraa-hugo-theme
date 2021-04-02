@@ -13,9 +13,14 @@ languageCode = "en-us"
 title = "Home_Page_Title_of_Your_site"
 theme = "googoraa-hugo-theme"
 paginate = 8 #number_of_post_you_wanna_have_in_one_page_of_pagination
+disqusShortname = "you_dispusshortname"
 
+[markup.goldmark.renderer]
+    unsafe= true
 
 [params]
     description = "Your_site_description"
     gravatar = "76070efc166f53a9ca25f8ff7b5ccd5d"
+    # Google Analytics 4
+    googleAnalyticsID = "G-MESUREMENT-ID"
 ```
