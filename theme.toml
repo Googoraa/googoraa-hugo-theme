@@ -1,15 +1,19 @@
-
-
 #==========
-# uncomment, copy & paste the line below to config.toml
-#BaseURL = "https://googoraa.github.io/"
-#languageCode = "en-us"
-#title = "Googoraa"
-#theme = "googoraa"
-#paginate = 8
-#[params]
-    #description = "Hubby Blog About Linux"
-    #gravatar = "76070efc166f53a9ca25f8ff7b5ccd5d"
+# BaseURL = "https://googoraa.github.io/"
+# languageCode = "en-us"
+# title = "Googoraa"
+# theme = "googoraa"
+# paginate = 8
+# disqusShortname = "googoraa"
+
+# [markup.goldmark.renderer]
+#    unsafe= true
+
+# [params]
+#    description = "Hubby Blog About Linux"
+#    gravatar = "76070efc166f53a9ca25f8ff7b5ccd5d"
+#    # Google Analytics 4
+#    googleAnalyticsID = "G-GR2RY1GHZE"
 #=============
 
 # theme.toml template for a Hugo theme
