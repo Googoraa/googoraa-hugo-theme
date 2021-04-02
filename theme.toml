@@ -1,7 +1,4 @@
-disqusShortname = "googoraa"
 
-[markup.goldmark.renderer]
-    unsafe= true
 
 #==========
 # uncomment, copy & paste the line below to config.toml
