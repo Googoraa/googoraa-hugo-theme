@@ -59,10 +59,18 @@ f_image: img/learn-how-to-post-f-image.jpg
 ```
 ### Figure with caption
 
-{{< figure how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window` `Font Installer Window` >}}
+{{< imgWCap how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window` `Font Installer Window` >}}
 
 ```
 {{</* figure <image_file_name.extension> (`<image_alt_text>`) (`<image_caption>`) */>}}
+```
+
+### Figure without caption
+
+{{< img how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window` >}}
+
+```
+{{</* img <image_file_name.extension> (`<image_alt_text>`) */>}}
 ```
 
 ## Shortcode of Download Botton

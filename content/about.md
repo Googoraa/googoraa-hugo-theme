@@ -26,7 +26,7 @@ spport: "enable"
 
 <aside>
   <blockquote>
-    <p>"GOOGORAA ― My Hobby Blog about Linux"</p>
+    <p>"GOOGORAA ― My Hobby Blog"</p>
   </blockquote>
 </aside>
 
