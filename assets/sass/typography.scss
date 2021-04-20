@@ -177,6 +177,14 @@
   font-style: normal;
 }
 
+/* Angkor Sovann Round 01 Khmer Font */
+@font-face {
+  font-family: "Angkor Sovann Round_01";
+  src: url("../fonts/AngkorSovannRound/AngkorSovannRound01.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --font-ui: "Lato", "Ang DaunMao";
   --font-tag: "Nokora", "Lato";
