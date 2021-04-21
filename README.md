@@ -11,9 +11,9 @@ Theme used in Googoraa Hugo Blog (excluding blog post)
 BaseURL = "https://googoraa.github.io/"
 languageCode = "en-us"
 title = "Googoraa"
-theme = "googoraa"
+theme = "googoraa-hugo-theme"
 paginate = 20
-disqusShortname = "googoraa-hugo-theme"
+disqusShortname = "googoraa"
 
 [markup.goldmark.renderer]
     unsafe= true
