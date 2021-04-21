@@ -75,6 +75,16 @@ f_image: img/learn-how-to-post-f-image.jpg
 
 ## Shortcode of Download Botton
 
+### Download pdf file
+
+{{< pdf `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
+
+```
+{{</* pdf `google_drive_id_of_file` */>}}
+```
+
+* google_drive_id_of_file can be found in the link gotten from get-link command of drive.
+
 ### Download App from Offical or Trusted Website
 
 {{< dwFW LibreOffice `https://www.libreoffice.org/download/download/` >}}
