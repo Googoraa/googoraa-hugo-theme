@@ -8,19 +8,19 @@ Theme used in Googoraa Hugo Blog (excluding blog post)
 3. in cofig.toml copy & paste:
 
 ```
-BaseURL = "https://example.com/"
+BaseURL = "https://googoraa.github.io/"
 languageCode = "en-us"
-title = "Home_Page_Title_of_Your_site"
-theme = "googoraa-hugo-theme"
-paginate = 8 #number_of_post_you_wanna_have_in_one_page_of_pagination
-disqusShortname = "you_dispusshortname"
+title = "Googoraa"
+theme = "googoraa"
+paginate = 20
+disqusShortname = "googoraa-hugo-theme"
 
 [markup.goldmark.renderer]
     unsafe= true
 
 [params]
-    description = "Your_site_description"
+    description = "A Hubby Blog"
     gravatar = "76070efc166f53a9ca25f8ff7b5ccd5d"
     # Google Analytics 4
-    googleAnalyticsID = "G-MESUREMENT-ID"
+    googleAnalyticsID = "G-GR2RY1GHZE"
 ```
