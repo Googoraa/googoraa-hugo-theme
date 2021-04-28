@@ -75,6 +75,14 @@ f_image: img/learn-how-to-post-f-image.jpg
 
 ## Shortcode of Download Botton
 
+### Download App from Offical or Trusted Website
+
+{{< dwF `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
+
+```
+{{</* dwF `google_drive_id_of_file` */>}}
+```
+
 ### Download pdf file
 
 {{< pdf `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
