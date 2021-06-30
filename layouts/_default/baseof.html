@@ -10,6 +10,6 @@
 
     {{ partial "footer.html" . }}
 
-    {{ partial "script.html" . }}
+    {{ if .Params.katex}}{{ partial "katex.html" . }}{{ end }}
   </body>
 </html>
