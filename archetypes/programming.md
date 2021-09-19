@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "title"
 description: "pageDescription"
 
 date: {{ .Date }}
@@ -8,10 +8,12 @@ update: false
 f_image: img/
 draft: true
 katex: false
+categories:
+  - Programming
 
 tags:
-    - tag1
-    - tag2
+  - tag1
+  - tag2
 
 author: dimorng
 disqus: "enable"

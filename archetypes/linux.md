@@ -2,21 +2,20 @@
 title: "title"
 description: "pageDescription"
 
-date: {{ .Date  }}
+date: {{ .Date }}
 update: false
 
 f_image: img/
 draft: true
 katex: false
-categories: 
-    - Linux
+categories:
+  - Linux
 
 tags:
-    - tag1
-    - tag2
+  - tag1
+  - tag2
 
 author: dimorng
 disqus: "enable"
 spport: "enable"
 ---
-

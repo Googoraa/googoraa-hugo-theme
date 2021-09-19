@@ -19,3 +19,6 @@ min_version = "0.41.0"
   name = ""
   homepage = ""
   repo = ""
+
+pygmentsuseclasses = true
+PygmentsCodeFences = true

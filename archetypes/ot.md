@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 description: "pageDescription"
 
-date: {{ .Date  }}
+date: {{ .Date }}
 update: false
 
 f_image: img/
@@ -19,4 +19,3 @@ author: dimorng
 disqus: "enable"
 spport: "enable"
 ---
-
