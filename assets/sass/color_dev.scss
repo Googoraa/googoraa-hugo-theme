@@ -1,4 +1,4 @@
-// color palette & site color theme ===== version 1 =====
+// color palette & site color theme ===== version 2 dev =====
 
 // site color theme
 :root {
@@ -8,8 +8,9 @@
   --theme_background: var(--color-02);
   --theme_seletion: var(--color-05);
   --theme_default-text: var(--color-01);
+  --theme_header: var(--color-04);
   --theme_button-border: var(--color-04);
-  --theme_blockquote-left-border: var(--color-05);
+  --theme_blockquote-left-border: var(--color-044);
   --theme_avatar-img-border: var(--color-17); //@byline.scss
 
   --theme_special-button-text: var(--color-01); //@shortcode_button.scss
@@ -25,21 +26,21 @@
   --theme-embeded-card-summary-text: var(--color-15);
 
   --theme_buy-me-coffee-border: var(--color-01);
-  --theme_buy-me-coffee-background: var(--color-05);
+  --theme_buy-me-coffee-background: var(--color-044);
 
   --theme_link: var(--color-04);
   --theme_section-divider-line: var(--color-01);
 
   --theme_code: var(--color-01);
   --theme_code-border: var(--color-03);
-  --theme_code-background: var(--color-06);
+  --theme_code-background: var(--color-066);
 
   --theme_keybord: var(--color-01);
   --theme_keybord-border: var(--color-03);
 
   --theme_table-border: var(--color-01);
   
-  --theme_navbar-background: var(--color-06);
+  --theme_navbar-background: var(--color-066);
   --theme_navbar-default-text: var(--color-01);
   --theme_navbar-hover-active: var(--color-04);
 
@@ -53,14 +54,14 @@
 
   --theme_footer-link: var(--color-01);
   --theme_footer-link-hover-active: var(--color-04);
-  --theme_footer-background: var(--color-06);
+  --theme_footer-background: var(--color-066);
 }
 
 //color palette
 :root {
   --color-01: #ffffff;
   --color-15: #cacaca;
-  --color-02: #404040;
+  --color-02: #404040; //site background
   --color-07: #3d3d3d8c;
   --color-13: #353535;
   --color-17: #363636c2;
@@ -71,10 +72,59 @@
   --color-08: #3d3935;
   --color-10: #ffe16b;
 
-  --color-04: #a2faff;
+  --color-04: #9bff9b; // navbar border
+  --color-044: #33d634; //googoraa navbar logo fill
   --color-12: #6e99bd;
   --color-14: #41aaff;
-  --color-05: #4abcff;
+  --color-05: #611b5b;
   --color-11: #0068df;
-  --color-06: #000019;
+  --color-06: #404040; //navbar background
+  --color-066: #1e1e1e; //footer background
+}
+
+// === theme specific ===
+header {
+  border-width: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      var(--color-06),
+      var(--color-04), 
+      var(--color-06)
+    ) 0 0 1 0;
+}
+
+footer {
+  border-width: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      var(--color-06),
+      var(--color-04), 
+      var(--color-06)
+    ) 1 0 0 0;
+}
+
+// googoraa nav logo fill transition
+nav svg path {
+  transition: fill .9s;
+} 
+
+nav svg:hover{
+  #inner_logo {
+    fill: var(--color-066);
+  }
+  #logo-border {
+    fill: var(--color-044);
+  }
+} 
+
+h1 {
+  color: var(--theme_header);
 }
