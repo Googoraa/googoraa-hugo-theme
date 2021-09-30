@@ -1,5 +1,5 @@
 header {
-  background: var(--dark-blue);
+  background: var(--theme_navbar-background);
 }
 
 nav {
@@ -35,20 +35,20 @@ nav .logo:link,
 nav .logo:visited,
 nav .main_nav li a:link,
 nav .main_nav li a:visited {
-  color: var(--white);
+  color: var(--theme_navbar-default-text);
 }
 
 nav .logo:hover,
 nav .logo:active,
 nav .main_nav li a:hover,
 nav .main_nav li a:active {
-  color: var(--lighter-blue);
+  color: var(--theme_navbar-hover-active);
   text-decoration: none;
 }
 
 nav .main_nav li .active:link,
 nav .main_nav li .active:visited {
-  color: var(--lighter-blue);
+  color: var(--theme_navbar-hover-active);
   font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ nav .main_nav li .active:active {
   #hambuger-icon-line-1,
   #hambuger-icon-line-2,
   #hambuger-icon-line-3 {
-    background-color: white;
+    background-color: var(--theme_hambuger-icon);
     height: 3px;
     border-radius: 10%;
     margin: 6px 0;
@@ -124,7 +124,7 @@ nav .main_nav li .active:active {
   }
   nav .main_nav-toggle {
     position: fixed;
-    background-color: var(--dark-blue);
+    background-color: var(--theme_navbar-background);
     top: 0;
     left: 0;
     height: 100vh;

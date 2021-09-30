@@ -5,7 +5,7 @@ aside.botton_container {
 }
 
 aside.botton_container .button {
-    background-color: #0068df /*#1eb8ff*/;
+    background-color: var(--theme_special-button-background) /*#1eb8ff*/;
     border-radius: 2px;
     cursor: pointer;
     display: block;
@@ -29,8 +29,8 @@ aside.botton_container #icon_side svg {
 }
 
 aside.botton_container #text_side {
-    border-left: solid #6e99bd /*#4595a3*/ 1px;
-    color: white;
+    border-left: solid var(--theme_special-button-divider) /*#4595a3*/ 1px;
+    color: var(--theme_special-button-text);
     padding-left: 11px;
     padding-bottom: 2px;
 }

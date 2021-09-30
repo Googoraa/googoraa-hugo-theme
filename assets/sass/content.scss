@@ -6,7 +6,7 @@
 }
 
 ::selection {
-  background: var(--light-blue);
+  background: var(--theme_seletion);
 }
 
 body {
@@ -17,8 +17,8 @@ body {
   font-family: var(--font-ui);
   font-size: 1.2rem;
   line-height: 1.9;
-  color: var(--color-tx);
-  background-color: var(--bg);
+  color: var(--theme_default-text);
+  background-color: var(--theme_background);
 
   //experimental to fix triger overflow when use img full screen
   overflow-x: hidden;
@@ -36,12 +36,10 @@ section {
 h1 {
   margin: 0px 0px 20px;
   font-size: 1.7rem;
-  color: var(--color-header);
 }
 
 h2 {
   font-size: 1.4rem;
-  color: var(--color-header);
   margin: 20px 0px;
 }
 
@@ -50,7 +48,6 @@ h4,
 h5,
 h6 {
   font-size: 1.3rem;
-  color: var(--color-header);
   margin: 20px 0px;
 }
 
@@ -61,16 +58,15 @@ p {
 pre {
   font-family: "Ang DaunMao", "Courier Prime";
   padding: 1rem 2rem 0.9rem 2rem;
-  background-color: var(--dark-blue) !important;
-  color: var(--color-codeB);
+  background-color: var(--theme_code-background) !important;
   margin: 20px 0px 30px 0px;
   overflow: auto;
 }
 
 code {
-  background: var(--dark-blue);
-  color: white;
-  border: 1px solid var(--light-gray);
+  background: var(--theme_code-background);
+  color: var(--theme_code);
+  border: 1px solid var(--theme_code-border);
   font-family: var(--font-codeB);
   font-size: 16px;
   padding: 6px 10px 3px 10px;
@@ -86,8 +82,8 @@ pre code {
 }
 
 kbd {
-  border: 1px solid var(--light-gray);
-  color: white;
+  border: 1px solid var(--theme_keybord-border);
+  color: var(--theme_keybord);
   font-family: var(--font-codeB);
   font-size: 16px;
   padding: 6px 10px 3px 10px;
@@ -98,13 +94,13 @@ kbd {
 
 a:link,
 a:visited {
-  color: var(--lighter-blue);
+  color: var(--theme_link);
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: var(--lighter-blue);
+  color: var(--theme_link);
   text-decoration: underline;
 }
 
@@ -168,7 +164,7 @@ figure.full figcaption {
 }
 
 blockquote {
-  border-left: 3px solid var(--light-blue);
+  border-left: 3px solid var(--theme_blockquote-left-border);
   padding-left: 20px;
   font-style: italic;
 }
@@ -193,7 +189,7 @@ blockquote .attribution::before {
 }
 
 .button {
-  border: 1px solid var(--lighter-blue);
+  border: 1px solid var(--theme_button-border);
   border-radius: 5px;
   margin: auto;
   display: table;
@@ -239,7 +235,7 @@ div#disqus_thread {
 
 .table table {
   width: 100%;
-  border: 1px solid white;
+  border: 1px solid var(--theme_table-border);
 }
 
 .table thead,
@@ -247,7 +243,7 @@ div#disqus_thread {
 .table th,
 .table tbody,
 .table td {
-  border: 1px solid white;
+  border: 1px solid var(--theme_table-border);
 }
 
 /* for mobile screen need improvement 

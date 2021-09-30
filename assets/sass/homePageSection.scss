@@ -58,7 +58,7 @@ section ~ section {
 }
 .img_container .date div {
   margin-top: auto;
-  background-color: #3d3d3d8c;
+  background-color: var(--theme_card-date-background);
 
   text-align: center;
 }
@@ -88,15 +88,15 @@ section ~ section {
 
 .card_tag a:link,
 .card_tag a:visited {
-  background: #ffe16b;
-  color: #3d3935;
+  background: var(--theme_tag-background);
+  color: var(--theme_tag-default-text);
   opacity: 1;
 }
 
 .card_tag a:hover,
 .card_tag a:active {
   text-decoration: none;
-  color: black;
+  color: var(--theme_tag-hover);
 }
 
 @media screen and (max-width: 834px) {
@@ -128,7 +128,7 @@ section ~ section {
 
 //  section_header 
 .section_header {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--theme_section-divider-line);
   text-align: center;
   margin: 0px 0px 36px 0px;
   padding-bottom: 10px;
@@ -149,7 +149,7 @@ section ~ section {
 }
 
 .tagN {
-  color:var(--lighter-blue);
+  color:var(--theme_tagN);
 }
 
 .tagN svg {

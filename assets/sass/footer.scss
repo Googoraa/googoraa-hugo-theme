@@ -1,6 +1,6 @@
 /*footer {
   margin-top: auto;
-  background: var(--dark-blue);
+  background: var(--theme_footer-background);
   padding: 30px 0px 30px 0px;
   font-size: 1.4rem;
 }
@@ -27,14 +27,14 @@ footer .container div a:link,
 footer .container div a:visited,
 footer .container div ul li a:link,
 footer .container div ul li a:visited {
-  color: var(--white);
+  color: var(--theme_footer-link);
 }
 
 footer .container div a:hover,
 footer .container div a:active,
 footer .container div ul li a:hover,
 footer .container div ul li a:active {
-  color: var(--lighter-blue);
+  color: var(--theme_footer-link-hover-active);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ footer .container div .active:link,
 footer .container div .active:visited,
 footer .container div ul li .active:link,
 footer .container div ul li .active:visited {
-  color: var(--lighter-blue);
+  color: var(--theme_footer-link-hover-active);
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@ footer .fb_pageNcredit .credit {
 // testing code start
 footer {
   margin-top: auto;
-  background: var(--dark-blue);
+  background: var(--theme_footer-background);
   padding: 30px 0px 30px 0px;
   font-size: 1.4rem;
 }
@@ -123,14 +123,14 @@ footer .container div a:link,
 footer .container div a:visited,
 footer .container div ul li a:link,
 footer .container div ul li a:visited {
-  color: var(--white);
+  color: var(--theme_footer-link);
 }
 
 footer .container div a:hover,
 footer .container div a:active,
 footer .container div ul li a:hover,
 footer .container div ul li a:active {
-  color: var(--lighter-blue);
+  color: var(--theme_footer-link-hover-active);
   text-decoration: none;
 }
 
@@ -138,7 +138,7 @@ footer .container div .active:link,
 footer .container div .active:visited,
 footer .container div ul li .active:link,
 footer .container div ul li .active:visited {
-  color: var(--lighter-blue);
+  color: var(--theme_footer-link-hover-active);
   font-weight: bold;
 }
 
