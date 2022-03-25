@@ -42,11 +42,25 @@
   width: 1.6rem;
   height: auto;
   margin: 6px 0px 0px 9px;
+  fill: #9be7ff;
   cursor: pointer;
+}
+
+.share .facebook svg:hover,
+.share .telegram svg:hover,
+.share .twitter svg:hover {
+  fill: var(--color-04);
 }
 
 article .share {
   display: none;
+}
+
+.share a:link,
+.share a:visited,
+.share a:hover,
+.share a:active {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 834px) {

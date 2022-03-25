@@ -7,7 +7,7 @@ date: 2020-08-22T15:55:37+07:00
 update: true
 
 f_image: img/feature-img-about.jpg
-draft: false
+draft: true
 katex: false
 
 tags:
