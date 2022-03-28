@@ -152,6 +152,26 @@
       format("svg"); /* Legacy iOS */
 }
 
+// Code New Roman
+@font-face {
+  font-family: "Code New Roman";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/codeNewRomance/CodNewRomanR.otf") format("opentype");
+}
+@font-face {
+  font-family: "Code New Roman";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/codeNewRomance/CodeNewRomanI.otf") format("opentype");
+}
+@font-face {
+  font-family: "Code New Roman";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/codeNewRomance/CodeNewRomanB.otf") format("opentype");
+}
+
 /* Courier Prime */
 @font-face {
   font-family: "Courier Prime";
@@ -227,6 +247,6 @@
 :root {
   --font-ui: "Lato", "Ang DaunMao";
   --font-tag: "Nokora", "Lato";
-  --font-codeB: "Courier Prime", "Ang DaunMao";
+  --font-codeB: "Code New Roman", "Ang DaunMao";
   --font-title: "Lato700", "Angkor Sovann Round_01";
 }
