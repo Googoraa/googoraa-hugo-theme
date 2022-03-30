@@ -1,8 +1,8 @@
 {{ define "main" }}
 
-<!-- ALL BLOG POST -->
+<!-- ALL BLOG POST
 <section>
-  <h2 class="section_header">{{ partial "svg/new_articles.svg" }} WELCOME TO GOOGORAA!</h2>
+  <h2 class="section_header">{{ partial "svg/new_articles.svg" }} ALL Blog Post</h2>
   <div class="cards">
     {{ range .Paginator.Pages }}
     
@@ -29,9 +29,9 @@
   </div>
   {{ partial "pagination.html" . }}
 </section>
-<!-- ========================================== -->
+ ========================================== -->
 
-<!-- UNCOMMENT TO CATEGORIZE BOLG POST  
+<!-- UNCOMMENT TO CATEGORIZE BOLG POST  -->
 <section>
   <h2 class="section_header">{{ partial "svg/new_articles.svg" }} អត្ថបទ​ថ្មី</h2>
   <div class="cards">
@@ -88,7 +88,7 @@
   <div class="more_articles"><a href="{{ .Permalink }}"><i>ច្រើន​ទៀត</i> →</a></div>
 </section>
 {{ end }}
-
+<!--
 {{ with .Site.GetPage "section" "ot" }}
 <section>
   <h2 class="section_header">{{ partial "svg/other_topic.svg" }} ពី​នេះ​ពី​នោះ​</h2>
@@ -118,6 +118,6 @@
   <div class="more_articles"><a href="{{ .Permalink }}"><i>ច្រើន​ទៀត</i> →</a></div>
 </section>
 {{ end }}
--->
+ ========================== -->
 
 {{ end }}
