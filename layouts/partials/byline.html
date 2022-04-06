@@ -6,11 +6,13 @@
   {{ $gravatar := .Site.Data.author.dimorng.gravatar }}
 
 <div class="byline">
-  <img
-    class="avatar"
-    src="https://www.gravatar.com/avatar/{{ $gravatar }}?s=150&d=blank"
-    alt="Avatar for Dimorng"
-  />
+  <a href="{{ $social_media }}" target="_blank">
+    <img
+      class="avatar"
+      src="https://www.gravatar.com/avatar/{{ $gravatar }}?s=150&d=blank"
+      alt="Avatar for Dimorng"
+    />
+  </a>
   <div class="info">
     <div>
       <a class="name" href="{{ $social_media }}" target="_blank">{{ $author }}</a>
