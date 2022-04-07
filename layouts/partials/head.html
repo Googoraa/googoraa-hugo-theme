@@ -1,0 +1,41 @@
+<head>
+    
+    <!--Google analytic-->
+    {{ if .Site.Params.GoogleAnalyticsID }}
+    {{ partial "analytics-gtag.html" . }}
+    {{ end }}
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1e1e1e" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:url"           content="{{ .Permalink }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ .Title }}" />
+    <meta property="og:description"   content="{{ .Description }}" />
+    <meta property="og:image"         content="{{ .Site.BaseURL }}{{ .Params.f_image }}" />
+
+    <!-- Twitter -->
+    <meta property="twitter:url" content="{{ .Permalink }}">
+    <meta property="twitter:title" content="{{ .Title }}">
+    <meta property="twitter:description" content="{{ .Description }}">
+    <meta property="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.f_image }}">
+
+    
+
+     {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" false "includePaths" (slice "node_modules/myscss")) }}
+     {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Fingerprint }}
+     <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  
+    <link rel="icon" sizes="256x256" href="https://www.gravatar.com/avatar/{{ .Site.Params.gravatar }}?s=256&d=blank" />
+    <script defer src="/js/script.js"></script>
+    <title> 
+        {{ if .Page.IsHome }} 
+            {{ .Site.Title }} | {{ .Site.Params.description }} 
+        {{ else }}
+            {{ .Page.Title }} {{ .Page.Params.categories }}
+        {{ end}}
+    </title>
+  </head>

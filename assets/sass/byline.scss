@@ -1,0 +1,48 @@
+.byline {
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid var(--theme_avatar-img-border);
+  height: 48px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.byline .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+
+  line-height: 1.6;
+}
+
+.info .name {
+  font-weight: bold;
+}
+
+.info .name:link,
+.info .name:visited {
+  color: var(--theme_byline_link);
+  text-decoration: none;
+  opacity: 1;
+}
+
+.info .name:hover,
+.info .name:active {
+  color: var(--theme_byline_link);
+  text-decoration: underline;
+}
+
+.info .description::before {
+  content: " | ";
+}
+
+.info .update::before {
+  content: " · ";
+}

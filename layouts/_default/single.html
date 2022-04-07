@@ -1,0 +1,28 @@
+{{ define "main" }} 
+
+<article>
+    <h1>{{ .Page.Title }}</h1>
+    {{ partial "byline.html" . }}
+
+    {{ partial "tagNshare.html" . }}
+
+    {{ .Content }}
+
+    <!--{{if .Params.about }}{{ partial "contact.html" . }}{{end}}-->
+
+    {{ partial "share.html" . }}
+
+    {{if eq .Params.spport "enable" }}
+        {{ partial "supportMe.html" . }}
+    {{end}}
+
+    {{ if eq .Params.disqus "enable" }}
+        {{ template "_internal/disqus.html" . }}
+    {{ end }}
+</article>
+
+{{/* {{ delimit .Params.categories "" }} */}}
+
+{{ end }}
+
+

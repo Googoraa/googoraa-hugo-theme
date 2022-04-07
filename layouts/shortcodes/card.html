@@ -1,0 +1,42 @@
+{{ with .Site.GetPage "" (.Get 0) }}
+<div class="post_card">
+  <div class="em_card">
+    <div>
+      <div class="em_card_container">
+        <div class="img_section">
+          <div class="img__container">
+            <img src="/{{ .Params.f_image }}" alt='Feature image for "{{ .Title }}" article.'/>
+          </div>
+        </div>
+        <div class="text_section">
+          <time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>⏲️ <i>{{ dateFormat "Monday, 2 January 2006" .Date }} {{with .Params.update }}(updated){{ end }}</i></time>
+          <div class="card_title">{{ truncate 60 .Title }}</div>
+          <div class="summary"><i>{{ truncate 100 .Summary }}</i></div>
+          <div class="read_more">READ MORE</div>
+        </div>
+      </div>
+      <a class="card_link" href="{{ .Permalink }}" target="_blank" title="{{ .Title }}"></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="img_container">
+      
+      <img src="/{{ .Params.f_image }}" alt='Feature image for "{{ .Title }}" article.'>
+      <div class="date">
+        <div><time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>{{ dateFormat "Monday, 2 January 2006" .Date }}</time></div>
+      </div>
+    </div>
+    <div class="card_contain">
+      <div class="card_tag">
+        {{ range (.GetTerms "tags") }}
+        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+
+      <div class="card_title">{{ .Title }}</div>
+    </div>
+    <a href="{{ .Page.Permalink }}" class="card_link"></a>
+  </div>
+  {{ end }}
+</div>

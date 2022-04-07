@@ -1,0 +1,140 @@
+header {
+  background: var(--theme_navbar-background);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  max-width: 768px;
+  margin: 0px auto;
+  padding: 14px 0px;
+}
+
+//navbar
+nav .logo svg {
+  //stroke: currentColor;
+  fill: currentColor;
+  width: 2.7rem;
+  height: auto;
+  vertical-align: middle;
+}
+
+nav .main_nav {
+  margin-left: auto;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+nav .main_nav li {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav .logo:link,
+nav .logo:visited,
+nav .main_nav li a:link,
+nav .main_nav li a:visited {
+  color: var(--theme_navbar-default-text);
+}
+
+nav .logo:hover,
+nav .logo:active,
+nav .main_nav li a:hover,
+nav .main_nav li a:active {
+  color: var(--theme_navbar-hover-active);
+  text-decoration: none;
+}
+
+nav .main_nav li .active:link,
+nav .main_nav li .active:visited {
+  color: var(--theme_navbar-hover-active);
+  font-weight: bold;
+}
+
+nav .main_nav li .active:hover,
+nav .main_nav li .active:active {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 834px) {
+  .overflow-toggle {
+    overflow: hidden;
+  }
+  nav {
+    margin: 0px 20px;
+  }
+  nav .menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav .logo {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  nav #hamburger-icon {
+    width: 33px;
+    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #hambuger-icon-line-1,
+  #hambuger-icon-line-2,
+  #hambuger-icon-line-3 {
+    background-color: var(--theme_hambuger-icon);
+    height: 3px;
+    border-radius: 10%;
+    margin: 6px 0;
+    margin-left: auto;
+  }
+  #hambuger-icon-line-2 {
+    width: 27px;
+  }
+  .toggle-hambuger-icon-line {
+    display: none;
+  }
+  #hambuger-icon-line-3 {
+    width: 21px;
+  }
+  .rotate-hamburger-line-3 {
+    transform: translateY(-4.5px);
+    width: 33px !important;
+    transform: translateY(-4.5px) rotate(-45deg);
+  }
+  .rotate-hamburger-line-1 {
+    transform: translateY(4.5px);
+    width: 33px !important;
+    transform: translateY(4.5px) rotate(45deg);
+  }
+
+  nav .menu svg {
+    width: 30px;
+    vertical-align: 0.5px;
+  }
+
+  nav ul.active {
+    display: block;
+  }
+
+  nav .main_nav {
+    display: none;
+  }
+  nav .main_nav-toggle {
+    position: fixed;
+    background-color: var(--theme_navbar-background);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    padding: 30px;
+    z-index: 2;
+  }
+
+  nav .main_nav li {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,199 @@
+/*footer {
+  margin-top: auto;
+  background: var(--theme_footer-background);
+  padding: 30px 0px 30px 0px;
+  font-size: 1.4rem;
+}
+
+footer .container {
+  display: flex;
+  max-width: 768px;
+  margin: 0px auto;
+}
+
+.fb_pageNcredit {
+  margin-left: auto;
+}
+
+footer .container div ul {
+  margin-left: 0px;
+}
+
+footer .container div ul li {
+  list-style-type: none;
+}
+
+footer .container div a:link,
+footer .container div a:visited,
+footer .container div ul li a:link,
+footer .container div ul li a:visited {
+  color: var(--theme_footer-link);
+}
+
+footer .container div a:hover,
+footer .container div a:active,
+footer .container div ul li a:hover,
+footer .container div ul li a:active {
+  color: var(--theme_footer-link-hover-active);
+  text-decoration: none;
+}
+
+footer .container div .active:link,
+footer .container div .active:visited,
+footer .container div ul li .active:link,
+footer .container div ul li .active:visited {
+  color: var(--theme_footer-link-hover-active);
+  font-weight: bold;
+}
+
+footer .container div .active:hover,
+footer .container div .active:active,
+footer .container div ul li .active:hover,
+footer .container div ul li .active:active {
+  opacity: 0.8;
+}
+
+footer .fb_pageNcredit .credit {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 834px) {
+  footer .container {
+    display: block;
+    margin: 0px 18px;
+    text-align: center;
+  }
+
+  .fb_pageNcredit {
+    margin-top: 25px;
+  }
+
+  iframe {
+    margin: auto !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  iframe {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+}
+*/
+
+// testing code start
+footer {
+  margin-top: auto;
+  background: var(--theme_footer-background);
+  padding: 30px 0px 30px 0px;
+  font-size: 1.4rem;
+}
+
+footer .container {
+  /*display: flex;*/
+  max-width: 768px;
+  margin: 0px auto;
+}
+
+.fb_pageNcredit {
+  margin-left: auto;
+}
+
+footer .container .footMenu {
+  display: flex;
+  justify-content: center;
+}
+
+footer .container .footMenu ul {
+  margin-left: 0px;
+  display: flex;
+}
+
+footer .container .footMenu ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+
+footer .container .footMenu a {
+  padding: 0px 10px;
+}
+
+footer .container div a:link,
+footer .container div a:visited,
+footer .container div ul li a:link,
+footer .container div ul li a:visited {
+  color: var(--theme_footer-link);
+}
+
+footer .container div a:hover,
+footer .container div a:active,
+footer .container div ul li a:hover,
+footer .container div ul li a:active {
+  color: var(--theme_footer-link-hover-active);
+  text-decoration: none;
+}
+
+footer .container div .active:link,
+footer .container div .active:visited,
+footer .container div ul li .active:link,
+footer .container div ul li .active:visited {
+  color: var(--theme_footer-link-hover-active);
+  font-weight: bold;
+}
+
+footer .container div .active:hover,
+footer .container div .active:active,
+footer .container div ul li .active:hover,
+footer .container div ul li .active:active {
+  opacity: 0.8;
+}
+
+footer .socialMediaLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+footer .socialMediaLogo span {
+  padding: 0px 7px;
+}
+
+footer .socialMediaLogo span svg {
+  width: 50px;
+  height: auto;
+  transition: all 0.3s ease 0s;
+}
+
+footer .socialMediaLogo span svg:hover {
+  transform: translateY(-7px);
+}
+
+footer .credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 629px) {
+  footer .container .footMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container .footMenu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .container .footMenu ul li {
+    padding: 0px;
+  }
+  
+  footer .container .footMenu a {
+    padding: 0px;
+  }
+}
+// end testing code

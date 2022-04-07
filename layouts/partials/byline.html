@@ -1,0 +1,30 @@
+
+{{ if eq .Params.author "dimorng" }}
+  {{ $author := .Site.Data.author.dimorng.name }}
+  {{ $social_media := .Site.Data.author.dimorng.social_media }}
+  {{ $description := .Site.Data.author.dimorng.description }}
+  {{ $gravatar := .Site.Data.author.dimorng.gravatar }}
+
+<div class="byline">
+  <a href="{{ $social_media }}" target="_blank">
+    <img
+      class="avatar"
+      src="https://www.gravatar.com/avatar/{{ $gravatar }}?s=150&d=blank"
+      alt="Avatar for Dimorng"
+    />
+  </a>
+  <div class="info">
+    <div>
+      <a class="name" href="{{ $social_media }}" target="_blank">{{ $author }}</a>
+      <span class="description">{{ $description }}</span>
+    </div>
+    <div>
+      <time class="post-date" datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>{{ dateFormat "Monday, 2 January 2006" .Date }}</time>
+
+      {{with .Params.update }}
+      <span class="update"><i>updated</i></span> 
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

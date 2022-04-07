@@ -1,0 +1,80 @@
+.tagNshare {
+  display: flex;
+  align-items: center;
+}
+
+.tagNshare .tag {
+  margin: 35px 0px;
+  font-family: var(--font-tag);
+}
+
+.tag a {
+  font-size: 15px;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.tag a:link,
+.tag a:visited {
+  background: #ffe16b;
+  color: #3d3935;
+  opacity: 1;
+}
+
+.tag a:hover,
+.tag a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.tagNshare .share {
+  font-size: 1rem;
+  text-align: right;
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.share .facebook svg,
+.share .telegram svg,
+.share .twitter svg {
+  width: 1.6rem;
+  height: auto;
+  margin: 6px 0px 0px 9px;
+  fill: #9be7ff;
+  cursor: pointer;
+}
+
+.share .facebook svg:hover,
+.share .telegram svg:hover,
+.share .twitter svg:hover {
+  fill: var(--color-04);
+}
+
+article .share {
+  display: none;
+}
+
+.share a:link,
+.share a:visited,
+.share a:hover,
+.share a:active {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 834px) {
+  .tagNshare .share {
+    display: none;
+  }
+
+  article .share {
+    display: block;
+  }
+
+  .share .facebook svg,
+  .share .telegram svg,
+  .share .twitter svg {
+    width: 2rem;
+  }
+}

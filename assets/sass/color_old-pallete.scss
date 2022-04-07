@@ -1,0 +1,80 @@
+// color palette & site color theme ===== version 1 =====
+
+// site color theme
+:root {
+  // not sure 
+  --theme_tagN: var(--color-04); //@homePageSection.scss
+
+  --theme_background: var(--color-02);
+  --theme_seletion: var(--color-05);
+  --theme_default-text: var(--color-01);
+  --theme_button-border: var(--color-04);
+  --theme_blockquote-left-border: var(--color-05);
+  --theme_avatar-img-border: var(--color-17); //@byline.scss
+
+  --theme_special-button-text: var(--color-01); //@shortcode_button.scss
+  --theme_special-button-background: var(--color-11); //@shortcode_button.scss
+  --theme_special-button-divider: var(--color-12); //@shortcode_button.scss
+
+  --theme_card-date-background: var(--color-07); //@homePageSection
+
+  //@em_card.scss
+  --theme-embeded-card-background: var(--color-13);
+  --theme-embeded-card-background-mobile: var(--color-16);
+  --theme-embeded-card-time: var(--color-14);
+  --theme-embeded-card-summary-text: var(--color-15);
+
+  --theme_buy-me-coffee-border: var(--color-01);
+  --theme_buy-me-coffee-background: var(--color-05);
+
+  --theme_link: var(--color-04);
+  --theme_section-divider-line: var(--color-01);
+
+  --theme_code: var(--color-01);
+  --theme_code-border: var(--color-03);
+  --theme_code-background: var(--color-06);
+
+  --theme_keybord: var(--color-01);
+  --theme_keybord-border: var(--color-03);
+
+  --theme_table-border: var(--color-01);
+  
+  --theme_navbar-background: var(--color-06);
+  --theme_navbar-default-text: var(--color-01);
+  --theme_navbar-hover-active: var(--color-04);
+
+  --theme_hambuger-icon: var(--color-01);
+
+  --theme_byline_link: var(--color-01);
+
+  --theme_tag-background: var(--color-10);
+  --theme_tag-default-text: var(--color-08);
+  --theme_tag-hover: var(--color-09);
+
+  --theme_footer-link: var(--color-01);
+  --theme_footer-link-hover-active: var(--color-04);
+  --theme_footer-background: var(--color-06);
+}
+
+//color palette
+:root {
+  --color-01: #ffffff;
+  --color-15: #cacaca;
+  --color-02: #404040;
+  --color-07: #3d3d3d8c;
+  --color-13: #353535;
+  --color-17: #363636c2;
+  --color-16: #313131;
+  --color-03: #00000042;
+  --color-09: #000000;
+  
+  --color-08: #3d3935;
+  --color-10: #ffe16b;
+
+  --color-04: #a2faff;
+  --color-12: #6e99bd;
+  --color-14: #41aaff;
+  --color-05: #4abcff;
+  --color-11: #0068df;
+  --color-06: #000019;
+}
