@@ -1,5 +1,5 @@
 // @import "color";
-@import "color";
+@import "colorPalette";
 
 @import "header";
 @import "byline";
@@ -11,4 +11,7 @@
 @import "spportGoogoraa";
 @import "shortcode_botton";
 @import "em_card";
+
+// shortcode stylesheet
+@import "shortcodeStyle/newbieTip.scss"
 

@@ -1,0 +1,29 @@
+.newbie-tip {
+    border: 3px solid var(--color-10);
+    border-radius: 10px;
+    background-color: var(--color-10);
+}
+
+.newbie-tip .snipplet-title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 2px 10px 0px 10px;
+}
+
+.snipplet-title svg {
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 40%;
+}
+
+.snipplet-title .text {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-1010);
+}
+.newbie-tip .tip-content {
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--color-02);
+    padding: 15px 20px;
+}
