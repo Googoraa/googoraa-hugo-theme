@@ -21,6 +21,11 @@ p img {
   max-width: 100%;
 }
 
+// smartphone image
+img[data-image="smartphone-screenshot"] {
+  max-width: 300px !important;
+}
+
 .image-container .zoom-in-icon-container {
   position: absolute;
   top: 0px;

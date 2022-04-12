@@ -1,5 +1,5 @@
 <div class="image-container">
-    <img data-image src="/img/{{ .Get 0 }}" alt="{{ .Get 1 }}" />
+    <img data-image="{{ .Get 2 }}" src="/img/{{ .Get 0 }}" alt="{{ .Get 1 }}" />
     <div class="zoom-in-icon-container">
         {{ partial "svg/zoomIn.svg" . }}
     </div>
