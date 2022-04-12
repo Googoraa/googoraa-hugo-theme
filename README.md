@@ -1,4 +1,5 @@
 # googoraa-hugo-theme
+
 Theme used in Googoraa Hugo Blog (excluding blog post)
 
 ## Set Up:
@@ -23,4 +24,14 @@ disqusShortname = "googoraa"
     gravatar = "76070efc166f53a9ca25f8ff7b5ccd5d"
     # Google Analytics 4
     googleAnalyticsID = "G-GR2RY1GHZE"
+```
+
+## image Note:
+
+smartphone screenshot style image shortcode: must add ``smartphone-screenshot` to set size
+
+- see post: https://googoraa.github.io/linux/what-is-torrent/
+
+```
+{{< imgWCap `imagename.extension` `image atl text` `image cap` `smartphone-screenshot` >}}
 ```
