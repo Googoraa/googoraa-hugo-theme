@@ -5,10 +5,10 @@ description: "fix khmer alphabet issue in Linux"
 update: true
 
 tags:
-    - Khmer language
-    - Tip
-categories: 
-    - Linux
+  - Khmer language
+  - Tip
+categories:
+  - Linux
 
 author: dimorng
 disqus: "enable"
@@ -21,7 +21,7 @@ f_image: img/digraph-khmer-vowel-solution-in-ubuntu-based-distro-fm-min.png
 
 **តើ​អ្នក​កំពុង​ប្រើ​ Linux Mint, Ubuntu ឬ Ubuntu Based Linux Distro ឬ ? តើ​អ្នក​មិន​អាច​វាយ​ចេញ ស្រៈ​ផ្សំ​ភាសាខ្មែរ ៖ អុំ​ អាំ​ អុះ​ អេះ​ អោះ ឬ (វាយ​ចេញ​ទ្រុង​ជ្រូក) ?**
 
-![khmer-digraph-output](/img/digraph-khmer-vowel-solution-in-ubuntu-based-distro-1-min.png)
+{{< img `digraph-khmer-vowel-solution-in-ubuntu-based-distro-1-min.png` `khmer-digraph-output` >}}
 
 ### Backup 
 
@@ -29,12 +29,14 @@ f_image: img/digraph-khmer-vowel-solution-in-ubuntu-based-distro-fm-min.png
 
 ## ផ្លូវកាត់
 
-1. ទាញ​យក​ file keyboard layout ខ្មែរ​ ដោយ​[ចុច​ត្រង់​នេះ](https://drive.google.com/file/d/1dyBzGeySjrcTA4S_Tv6ypU_cSf99U0RC/view?usp=drivesdk) 
+1. ទាញ​យក​ file keyboard layout ខ្មែរ​ ដោយ​[ចុច​ត្រង់​នេះ](https://drive.google.com/file/d/1dyBzGeySjrcTA4S_Tv6ypU_cSf99U0RC/view?usp=drivesdk)
 2. Right click លើ​ folder ដែល​ផ្ទុក​ file បាន​ទាញ​យក​ខាង​លើ (ជាទូទៅ​ `Downloads` folder) ហើយ​ជ្រើស​យក​ Open in Terminal ។
 3. ក្នុង​ Terminal window ដែល​បើក run command ខាងក្រោម​ រួច​វាយ​បញ្ចូល​ Password​ កុំព្យូទ័រ​ ៖
+
 ```
 sudo cp kh /usr/share/X11/xkb/symbols/kh
 ```
+
 4. restart កុំព្យូទ័រ
 
 ## វិធី​ធម្មតា
@@ -42,19 +44,20 @@ sudo cp kh /usr/share/X11/xkb/symbols/kh
 ### សង្ខេប​ដំណើរការ ៖
 
 1. run `sudo xed /usr/share/X11/xkb/symbols/kh` (បើ​អ្នក​ប្រើ​ Linux Mint) ឬ `sudo gedit /usr/share/X11/xkb/symbols/kh` (បើ​អ្នក​ប្រើ​ Ubuntu-based distro ផ្សេង​ទៀត)
-2. រួច​កែ ៖ 
-    - `0x10017fb` → `voidsymbol`
-    - `0x10017fc` → `voidsymbol`
-    - `0x10017fd` → `voidsymbol`
-    - `0x10017fe` → `voidsymbol`
-    - `0x10017ff` → `voidsymbol`
+2. រួច​កែ ៖
+   - `0x10017fb` → `voidsymbol`
+   - `0x10017fc` → `voidsymbol`
+   - `0x10017fd` → `voidsymbol`
+   - `0x10017fe` → `voidsymbol`
+   - `0x10017ff` → `voidsymbol`
 3. Save រួច​ restart កុំព្យូទ័រ​ ។
 
 ### ពន្យល់ ៖
 
-Keyboard layout ជា​ file ដែល​មាន​កូដ​សរសេរ​ដើម្បី​កំណត់​ ថា​តើ​ key នីមួយ ៗ របស់​ keyboard ត្រូវ​បង្ហាញ​អក្សរ​អ្វី ? ក្នុង Ubuntu ភាសា​នីមួយ ៗ មាន​ keyboard layout ដើម្បី​វាយ​បញ្ចូល​អក្ខរក្រម រៀង ៗ​ខ្លួន​ដាច់​ដោយ​ឡែក ។ Keyboard layout ទាំង​នេះ​ផ្ទុក​ក្នុង​ folder មួយ​ ដែល​មាន​អាសយដ្ឋាន  `/usr/share/X11/xkb/symbols` ។ Keyboard layout របស់​ភាសា​នីមួយ ៗ មាន​ឈ្មោះ​ 2 អក្សរ​ ជា​ អក្សរ​ផ្តើម​របស់​ឈ្មោះ​ភាសា ។ Keyboard layout របស់​ភាសាខ្មែរ​យើង​មាន​ឈ្មោះ `kh` ។ (ជា​ធម្មតា​ អ្នក​មិន​អាច​កែ​ប្រែ អ្វី​ដែល​មាន​ក្នុង​ folder នេះ​ទេ លុះត្រាតែ​អ្នក​បើក​សិទ្ធ​អាទិភាព ។ ខ្ញុំ​នឹង​បង្ហាញ​ពី​របៀប​បើក​សិទ្ធ​អាទិភាព​កែប្រែ កូដ​ក្នុង​ file keyboard layout នៅ​កថាខណ្ឌ​ក្រោយ ។)
+Keyboard layout ជា​ file ដែល​មាន​កូដ​សរសេរ​ដើម្បី​កំណត់​ ថា​តើ​ key នីមួយ ៗ របស់​ keyboard ត្រូវ​បង្ហាញ​អក្សរ​អ្វី ? ក្នុង Ubuntu ភាសា​នីមួយ ៗ មាន​ keyboard layout ដើម្បី​វាយ​បញ្ចូល​អក្ខរក្រម រៀង ៗ​ខ្លួន​ដាច់​ដោយ​ឡែក ។ Keyboard layout ទាំង​នេះ​ផ្ទុក​ក្នុង​ folder មួយ​ ដែល​មាន​អាសយដ្ឋាន `/usr/share/X11/xkb/symbols` ។ Keyboard layout របស់​ភាសា​នីមួយ ៗ មាន​ឈ្មោះ​ 2 អក្សរ​ ជា​ អក្សរ​ផ្តើម​របស់​ឈ្មោះ​ភាសា ។ Keyboard layout របស់​ភាសាខ្មែរ​យើង​មាន​ឈ្មោះ `kh` ។ (ជា​ធម្មតា​ អ្នក​មិន​អាច​កែ​ប្រែ អ្វី​ដែល​មាន​ក្នុង​ folder នេះ​ទេ លុះត្រាតែ​អ្នក​បើក​សិទ្ធ​អាទិភាព ។ ខ្ញុំ​នឹង​បង្ហាញ​ពី​របៀប​បើក​សិទ្ធ​អាទិភាព​កែប្រែ កូដ​ក្នុង​ file keyboard layout នៅ​កថាខណ្ឌ​ក្រោយ ។)
 
 ក្នុង keyboard layout ភាសាខ្មែរ​យើង​ Unicode ទាំង​ប្រាំ ដែល​តំណាង​ឲ្យ​ស្រះ​ផ្សំ​ទាំង​ប្រាំ​របស់​ភាសាខ្មែរ​យើង​គឺ ៖
+
 1. `0x10017fb` បញ្ជា key <kbd>Shift</kbd> + <kbd>,</kbd> (ជួរ​ទី 2 ជា​ជួរ shift) ឲ្យ​បង្ហាញ​ស្រៈ អុះ
 2. `0x10017fc` បញ្ជា key <kbd>,</kbd> ឲ្យ​បង្ហាញ​ស្រៈ អុំ
 3. `0x10017fd` បញ្ជា key <kbd>Shift</kbd> + <kbd>V</kbd> ឲ្យ​បង្ហាញ​ស្រៈ អេះ
@@ -62,22 +65,25 @@ Keyboard layout ជា​ file ដែល​មាន​កូដ​សរសេ�
 5. `0x10017ff` បញ្ជា key <kbd>Shift</kbd> + <kbd>A</kbd> ឲ្យ​បង្ហាញ​ស្រៈ អាំ
 
 ក្នុង​ពេល​បច្ចុប្បន្ន​នេះ​ កំពុង​មាន​បញ្ហា​ ពេល​វាយ​ key តំណាង​ស្រះ​ផ្សំ​ទាំង​នេះ មិន​បង្ហាញ​ស្រះ​ផ្សំ បែរ​ជា​បង្ហាញ​សញ្ញា​ទ្រុង​ជ្រូក ឬ​សញ្ញា​ចម្លែក​ទៅ​វិញ ! ចំពោះ​ឫសគល់​នៃ​បញ្ញា ខ្ញុំ​សង្ស័យ​ថា​អាច​ទាក់​ទង​នឹង​ Ubuntu development ឬ​ Debian development ឬ​ Gnome development ដែល​តម្រូវ​ឲ្យ​មាន​ចំណេះ​ដឹង​ខាង​ programming នឹង​ Unicode ពិសេស​ Unicode ខ្មែរ និយាយ​ឲ្យ​ខ្លី​គឺ​តម្រូវ​សូម​ឲ្យ​មាន​ការ​ជួយ​ពិនិត្យ​ និង​កែ​សម្រួល​ឡើង​វិញ​ពី​សំណាក់​ developers ពិសេស​ developers ខ្មែរ​យើង ។ សំណាង​ល្អ មាន​វិធី​ងាយ​ស្រួល​មួយ​ទៀត​ដើម្បី​វាយ​បង្ហាញ​ស្រះ​ផ្សំ​ទាំង​ប្រាំ​នេះ គឺ​ការ​វាយ​ key ស្រះ​ 2 ផ្សេង​គ្នា ផ្សំ​បង្កើត​ជា​ស្រះ​ផ្សំ ៖
+
 1. ដើម្បី វាយ​ស្រះ​ អុំ អ្នក​ត្រូវ​វាយ​ស្រះ អុ (key <kbd>U</kbd>) រួច​វាយ​ស្រះ អំ (key <kbd>Shift</kbd> + <kbd>M</kbd>)
-2.  អាំ  = អា (<kbd>A</kbd>) + អំ (<kbd>Shift</kbd> + <kbd>V</kbd>)
-3.  អុះ  = អុ (<kbd>U</kbd>) + អះ (<kbd>Shift</kbd> + <kbd>H</kbd>)
+2. អាំ = អា (<kbd>A</kbd>) + អំ (<kbd>Shift</kbd> + <kbd>V</kbd>)
+3. អុះ = អុ (<kbd>U</kbd>) + អះ (<kbd>Shift</kbd> + <kbd>H</kbd>)
 4. អេះ = អេ (<kbd>E</kbd>) + អះ (<kbd>Shift</kbd> + <kbd>H</kbd>)
-5. អោះ	= អោ (<kbd>O</kbd>) + អះ (<kbd>Shift</kbd> + <kbd>H</kbd>)
+5. អោះ = អោ (<kbd>O</kbd>) + អះ (<kbd>Shift</kbd> + <kbd>H</kbd>)
 
-### ល្បិច ៖ 
+### ល្បិច ៖
 
-របៀប​ចាំ​ថា​តើ​ ត្រូវ​វាយ​ស្រៈ​ណា​មុន ក្នុង​ការ​វាយ​ស្រៈ​ផ្សំ ៖ វាយ​ស្រៈ​គោល​មុន ។ ឧទាហរណ៍ ៖ 
-- អុំ =  អុម ដូច្នេះ អុ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អំ ជា​ក្រោយ
-- អាំ =  អាម់ ដូច្នេះ អា ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អំ ជា​ក្រោយ
-- អុះ =  អុស ដូច្នេះ អុ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ​ ជា​ក្រោយ
-- អេះ =  អេស ដូច្នេះ អេ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ ជា​ក្រោយ
-- អោះ ≈  អោស ដូច្នេះ អោ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ ជា​ក្រោយ
+របៀប​ចាំ​ថា​តើ​ ត្រូវ​វាយ​ស្រៈ​ណា​មុន ក្នុង​ការ​វាយ​ស្រៈ​ផ្សំ ៖ វាយ​ស្រៈ​គោល​មុន ។ ឧទាហរណ៍ ៖
+
+- អុំ = អុម ដូច្នេះ អុ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អំ ជា​ក្រោយ
+- អាំ = អាម់ ដូច្នេះ អា ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អំ ជា​ក្រោយ
+- អុះ = អុស ដូច្នេះ អុ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ​ ជា​ក្រោយ
+- អេះ = អេស ដូច្នេះ អេ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ ជា​ក្រោយ
+- អោះ ≈ អោស ដូច្នេះ អោ ជា​ស្រះ​គោល​ ត្រូវ​វាយ​មុន​ រួច​ចាំ​វាយ​ស្រៈ អះ ជា​ក្រោយ
 
 នៅ​ពេល​នេះ​ខ្ញុំ​មិន​ទាន់​មាន​ចំណេះដឹង​គ្រប់​គ្រាន់​ដើម្បី​អាច​ដោះស្រាយ​បញ្ហា​នេះ​ឲ្យ​ល្អ​ឥតខ្ចោះ​ទេ តែ​ខ្ញុំ​មាន​វិធី​ងាយស្រួល​ 2 ដែល​អាច​ដោះស្រាយ​បញ្ហា​នេះ​ជា​បណ្ដោះអាសន្ន គឺ​កែ​ Khmer keyboard layout ៖
+
 1. កែ​ Unicode តំណាង​ស្រះ​ផ្សំ​ទាំង​ 5 ទៅ​ជា​ Unicode តំណាង​អក្ខរក្រម​ខ្មែរ​ផ្សេង​ទៀត មាន​ន័យ​ថា​ក្រោយ​កែ​រួច​ ពេល​អ្នក​ចុច key តំណាង​ស្រះ​ផ្សំ​ពី​មុន អក្ខរក្រម​ផ្សេង​នឹង​បង្ហាញ
 2. ដក​ Unicode តំណាង​ស្រះ​ផ្សំ​ទាំង​ 5 ចេញ​តែ​ម្ដង​ មាន​ន័យ​ថា ក្រោយ​កែ​រួច​ ពេល​អ្នក​ចុច key តំណាង​ស្រះ​ផ្សំ​ពី​មុន គ្មាន​ចេញ​អក្ខរក្រម​អ្វី​ទាំងអស់ ។
 
@@ -88,10 +94,11 @@ Keyboard layout ជា​ file ដែល​មាន​កូដ​សរសេ�
 ដំបូង​ run command ៖ `sudo xed /usr/share/X11/xkb/symbols/kh` (បើ​អ្នក​ប្រើ​ Linux Mint) ឬ `sudo gedit /usr/share/X11/xkb/symbols/kh` (បើ​អ្នក​ប្រើ​ Ubuntu-based distro ផ្សេង​ទៀត) រួច​វាយ​ password កុំព្យូទ័រ​អ្នក ។
 
 យល់​អត្ថន័យ​ command ៖
-- `sudo`  ៖ សុំ​សិទ្ធ​អាទិភាព​កែ Khmer keyboard layout ដែល​ជា​ system file
-- `xed /usr/share/X11/xkb/symbols/kh` ឬ `gedit /usr/share/X11/xkb/symbols/kh` ៖ បើក​ `kh` file ដែល​ស្ថិត​នៅ​ទីតាំង (អាសយដ្ឋាន) `/usr/share/X11/xkb/symbols` (ជា​ Khmer keyboard layout) ដោយ​ប្រើ​កម្មវិធី​ `xed` ឬ `gEdit` (Text Editor) 
+
+- `sudo` ៖ សុំ​សិទ្ធ​អាទិភាព​កែ Khmer keyboard layout ដែល​ជា​ system file
+- `xed /usr/share/X11/xkb/symbols/kh` ឬ `gedit /usr/share/X11/xkb/symbols/kh` ៖ បើក​ `kh` file ដែល​ស្ថិត​នៅ​ទីតាំង (អាសយដ្ឋាន) `/usr/share/X11/xkb/symbols` (ជា​ Khmer keyboard layout) ដោយ​ប្រើ​កម្មវិធី​ `xed` ឬ `gEdit` (Text Editor)
 - វាយ password ៖ ផ្តល់​សិទ្ធ​អាទិភាព​កែ Khmer keyboard layout ដែល​ជា​ system file ។
-	
+
 បន្ទាប់​មក​ កម្មវិធី `xed` ឬ `gEdit` (Text Editor) នឹង​បើក​ដោយ​មាន​បង្ហាញ​កូដ​របស់ Khmer keyboard layout ផង ។ អ្នក​គ្រាន់​តែ​ កែ​ Unicode ទាំង​ប្រាំ (`0x10017fb`, `0x10017fc`, `0x10017fd`, `0x10017fe`, `0x10017ff`) ទៅ​ជា​ពាក្យ `voidsymbol` ហើយ​ Save (<kbd>Ctrl</kbd> + <kbd>S</kbd>) ជា​ការ​ស្រេច ។ ចុង​កោយ​អ្នក​ត្រូវ​ restart កុំព្យូទ័រ​អ្នក ។
 
-*បាន​ធ្វើ​តែស្ត​លើ​ Linux Mint 19.2 (Tina) Cinnamon Edition*
+_បាន​ធ្វើ​តែស្ត​លើ​ Linux Mint 19.2 (Tina) Cinnamon Edition_

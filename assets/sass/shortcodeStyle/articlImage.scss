@@ -9,10 +9,16 @@ figure {
   position: relative;
 }
 
+// markdown image style
+p img {
+  max-width: 670px;
+  display: block;
+  width: 100%;
+  margin: 30px auto;
+}
+
 .image-container img {
   max-width: 100%;
-  border-radius: 10px;
-  border: 1px solid black;
 }
 
 .image-container .zoom-in-icon-container {
@@ -20,7 +26,7 @@ figure {
   top: 0px;
   right: 0px;
   background-color: #0000008a;
-  border-radius: 0px 10px 0px 50%;
+  border-radius: 0px 0px 0px 50%;
   padding: 0px 7px;
   opacity: 0;
 }
