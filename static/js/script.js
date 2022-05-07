@@ -1,3 +1,6 @@
+const currentYearOnFooter = document.querySelector("footer [data-current-year]")
+const currentYear = new Date().getUTCFullYear()
+currentYearOnFooter.textContent = currentYear
 // test code
 
 // mobile hamburgerIcon
@@ -23,25 +26,25 @@ const allImageInCurrentPage = Array.from(
 )
 
 if (allImageInCurrentPage.length !== 0) {
-  allImageInCurrentPage.forEach((imageElement) => {
+  allImageInCurrentPage.forEach(imageElement => {
     // zoom effect
-    imageElement.addEventListener("mouseenter", (e) => {
+    imageElement.addEventListener("mouseenter", e => {
       imageElement.parentElement.classList.add("hover-effect")
     })
-    imageElement.addEventListener("mouseleave", (e) => {
+    imageElement.addEventListener("mouseleave", e => {
       imageElement.parentElement.classList.remove("hover-effect")
     })
 
     const zoomIcon = imageElement.nextElementSibling
-    zoomIcon.addEventListener("mouseenter", (e) => {
+    zoomIcon.addEventListener("mouseenter", e => {
       zoomIcon.parentElement.classList.add("hover-effect")
     })
-    zoomIcon.addEventListener("mouseleave", (e) => {
+    zoomIcon.addEventListener("mouseleave", e => {
       zoomIcon.parentElement.classList.remove("hover-effect")
     })
 
     // zoom in action
-    zoomIcon.addEventListener("click", (e) => {
+    zoomIcon.addEventListener("click", e => {
       const zoomedImageContainerBackground = document.createElement("div")
       zoomedImageContainerBackground.title =
         "click មួយ​ទៀត​ដើម្បី «បិទរូប»​ វិញ"
@@ -67,7 +70,7 @@ if (allImageInCurrentPage.length !== 0) {
       zoomedImageContainer.append(closeButtonContainer)
       documentBody.append(zoomedImageContainerBackground)
 
-      zoomedImageContainerBackground.addEventListener("click", (e) => {
+      zoomedImageContainerBackground.addEventListener("click", e => {
         documentBody.removeChild(zoomedImageContainerBackground)
       })
     })
@@ -76,7 +79,7 @@ if (allImageInCurrentPage.length !== 0) {
 
 // resize zoomed image to fit screen whenever screen is resized
 let imageDimension = []
-window.addEventListener("resize", (e) => {
+window.addEventListener("resize", e => {
   const zoomedImage = document.querySelector(".zoom-image-container img")
   if (zoomedImage != null) {
     imageDimension.push(zoomedImage.width)
