@@ -33,21 +33,29 @@
 
 <!-- UNCOMMENT TO CATEGORIZE BOLG POST  -->
 <section>
-  <h2 class="section_header">{{ partial "svg/new_articles.svg" }} អត្ថបទ​ថ្មី</h2>
+  <h2 class="section_header">
+    {{ partial "svg/new_articles.svg" }} អត្ថបទ​ថ្មី
+  </h2>
   <div class="cards">
     {{ range first 4 .Site.RegularPages }}
     <div class="card">
       <div class="img_container">
-        
-        <img src="{{ .Params.f_image }}" alt='Feature image for "{{ .Title }}" article.'>
+        <img
+          src="{{ .Params.f_image }}"
+          alt='Feature image for "{{ .Title }}" article.'
+        />
         <div class="date">
-          <div><time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>{{ dateFormat "Monday, 2 January 2006" .Date }}</time></div>
+          <div>
+            <time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'
+              >{{ dateFormat "Monday, 2 January 2006" .Date }}</time
+            >
+          </div>
         </div>
       </div>
       <div class="card_contain">
-        <div class="card_tag">
+        <div class="card_tag tag-container tag-container--card">
           {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+          <a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
           {{ end }}
         </div>
 
@@ -66,16 +74,22 @@
     {{ range first 4 .Pages }}
     <div class="card">
       <div class="img_container">
-        
-        <img src="{{ .Params.f_image }}" alt='Feature image for "{{ .Title }}" article.'>
+        <img
+          src="{{ .Params.f_image }}"
+          alt='Feature image for "{{ .Title }}" article.'
+        />
         <div class="date">
-          <div><time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>{{ dateFormat "Monday, 2 January 2006" .Date }}</time></div>
+          <div>
+            <time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'
+              >{{ dateFormat "Monday, 2 January 2006" .Date }}</time
+            >
+          </div>
         </div>
       </div>
       <div class="card_contain">
-        <div class="card_tag">
+        <div class="card_tag tag-container tag-container--card">
           {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+          <a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
           {{ end }}
         </div>
 
@@ -85,7 +99,9 @@
     </div>
     {{ end }}
   </div>
-  <div class="more_articles"><a href="{{ .Permalink }}"><i>ច្រើន​ទៀត</i> →</a></div>
+  <div class="more_articles">
+    <a href="{{ .Permalink }}"><i>ច្រើន​ទៀត</i> →</a>
+  </div>
 </section>
 {{ end }}
 <!--

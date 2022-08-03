@@ -17,17 +17,17 @@ section ~ section {
 }
 
 .card:hover {
-    transform: translateY(-7px);
+  transform: translateY(-7px);
 }
 
 .card .card_link {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .img_container {
@@ -72,8 +72,8 @@ section ~ section {
 }
 
 .card_title {
-    font-size: 23px;
-    margin-top: 5px;
+  font-size: 23px;
+  margin-top: 5px;
 }
 
 .card_tag {
@@ -100,33 +100,31 @@ section ~ section {
 }
 
 @media screen and (max-width: 834px) {
-    .card {
-        grid-column-end: span 2;
-        
-    }
+  .card {
+    grid-column-end: span 2;
+  }
 
-    .img_container {
-        padding-top: 30%;
-    }
+  .img_container {
+    padding-top: 30%;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .card {
-        grid-column-end: span 2;
-        
-    }
+  .card {
+    grid-column-end: span 2;
+  }
 
-    .img_container {
-        padding-top: 66.66%;
-    }
+  .img_container {
+    padding-top: 66.66%;
+  }
 
-    .card_title {
-        font-size: 1.2rem;
-        margin-top: 5px;
-    }
+  .card_title {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
 }
 
-//  section_header 
+//  section_header
 .section_header {
   border-bottom: 1px solid var(--theme_section-divider-line);
   text-align: center;
@@ -149,7 +147,7 @@ section ~ section {
 }
 
 .tagN {
-  color:var(--theme_tagN);
+  color: var(--theme_tagN);
 }
 
 .tagN svg {

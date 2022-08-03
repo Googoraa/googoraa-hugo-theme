@@ -2,31 +2,31 @@
 
 <section>
   <h2 class="section_header">
-    {{if eq .Title "LINUX"}}
-    {{ partial "svg/linux_icon.svg" }} 
-    {{else if eq .Title "Programming"}}
-    {{ partial "svg/programming.svg" }} 
-    {{else if eq .Title "ពីនេះ​ពី​នោះ​"}}
-    {{ partial "svg/other_topic.svg" }} 
-    {{else}}
-    {{ partial "svg/tag1.svg" }} 
-    {{end}}
-    
-    {{.Title}}</h2>
+    {{if eq .Title "LINUX"}} {{ partial "svg/linux_icon.svg" }} {{else if eq
+    .Title "Programming"}} {{ partial "svg/programming.svg" }} {{else if eq
+    .Title "ពីនេះ​ពី​នោះ​"}} {{ partial "svg/other_topic.svg" }} {{else}} {{
+    partial "svg/tag1.svg" }} {{end}} {{.Title}}
+  </h2>
   <div class="cards">
     {{ range .Paginator.Pages }}
     <div class="card">
       <div class="img_container">
-        
-        <img src="{{ .Site.BaseURL }}/{{ .Params.f_image }}" alt='Feature image for "{{ .Title }}" article.'>
+        <img
+          src="{{ .Site.BaseURL }}/{{ .Params.f_image }}"
+          alt='Feature image for "{{ .Title }}" article.'
+        />
         <div class="date">
-          <div><time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'>{{ dateFormat "Monday, 2 January 2006" .Date }}</time></div>
+          <div>
+            <time datetime='{{ dateFormat "Monday, 2 January 2006" .Date }}'
+              >{{ dateFormat "Monday, 2 January 2006" .Date }}</time
+            >
+          </div>
         </div>
       </div>
       <div class="card_contain">
-        <div class="card_tag">
+        <div class="card_tag tag-container tag-container--card">
           {{ range (.GetTerms "tags") }}
-          <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+          <a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
           {{ end }}
         </div>
 

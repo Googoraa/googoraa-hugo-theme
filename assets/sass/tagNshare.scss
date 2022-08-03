@@ -3,28 +3,62 @@
   align-items: center;
 }
 
-.tagNshare .tag {
+.tagNshare .tag-container {
   margin: 35px 0px;
   font-family: var(--font-tag);
 }
 
-.tag a {
-  font-size: 15px;
-  padding: 3px 10px;
-  border-radius: 4px;
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5em;
 }
 
-.tag a:link,
-.tag a:visited {
-  background: #ffe16b;
+.tag-container.tag-container--card {
+  justify-content: center;
+  z-index: 10;
+  padding: 0.5em 0em;
+}
+
+.tag-container .tag {
+  flex-shrink: 0;
+  font-size: 15px;
+  padding: 0em 0.7em;
+  border-radius: 0.3em;
+
+  --tag-background-color-hue: 48;
+  --tag-background-color-saturation: 100%;
+  --tag-background-color-lightness: 70%;
+  --tag-background-color: hsl(
+    var(--tag-background-color-hue),
+    var(--tag-background-color-saturation),
+    var(--tag-background-color-lightness)
+  );
+}
+
+.tag-container .tag:link,
+.tag-container .tag:visited {
+  background: var(--tag-background-color);
   color: #3d3935;
   opacity: 1;
 }
 
-.tag a:hover,
-.tag a:active {
+.tag-container .tag:hover,
+.tag-container .tag:active {
   text-decoration: none;
   color: black;
+}
+
+.tag-container .tag::before {
+  content: "#";
+
+  color: hsl(
+    var(--tag-background-color-hue),
+    calc(var(--tag-background-color-saturation) - 10%),
+    calc(var(--tag-background-color-lightness) - 40%)
+  );
 }
 
 .tagNshare .share {

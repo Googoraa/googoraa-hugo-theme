@@ -1,9 +1,8 @@
 <div class="tagNshare">
-  <div class="tag">
+  <div class="tag-container">
     {{ range (.GetTerms "tags") }}
-    <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    <a class="tag" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
     {{ end }}
   </div>
   {{ partial "share.html" . }}
 </div>
-
