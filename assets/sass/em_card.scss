@@ -34,7 +34,9 @@
 
 .em_card_container {
     max-width: 1000px;
-    background-color: var(--theme-embeded-card-background);
+    background-color: var(--color-embeded-card-background);
+    border: 3px solid var(--color-embeded-card-border);
+    color: var(--color-embeded-card-text);
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -70,13 +72,14 @@
 }
 
 .text_section time {
-    color: var(--theme-embeded-card-time);
+    color: var(--color-embeded-card-time);
     font-size: 1rem;
 }
 
 .text_section .summary {
-    color: var(--theme-embeded-card-summary-text);
+    color: var(--color-embeded-card-summary-text);
     font-size: 1.1rem;
+    opacity: 0.6;
 }
 
 .text_section .read_more {
@@ -94,19 +97,17 @@
     }
 
     .post_card .card {
-        width: 100vw;
+        width: 90vw;
         border-radius: 10px;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        padding-left: 23px;
-        padding-right: 23px;
         display: block;
-        background-color: var(--theme-embeded-card-background-mobile);
-        //border-radius: 10px;
+        background-color: var(--color-embeded-card-background-mobile);
+        border: 3px solid var(--color-embeded-card-border);
     }
 
-    /*.post_card .card .img_container {
+    .post_card .card .img_container {
         border-radius: 10px 10px 0px 0px;
-    }*/
+    }
 }

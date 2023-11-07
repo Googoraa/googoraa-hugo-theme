@@ -16,15 +16,15 @@
 
 .tag a:link,
 .tag a:visited {
-  background: #ffe16b;
-  color: #3d3935;
+  background: var(--color-tag-background);
+  color: var(--color-tag-text);
   opacity: 1;
 }
 
 .tag a:hover,
 .tag a:active {
   text-decoration: none;
-  color: black;
+  opacity: 0.8;
 }
 
 .tagNshare .share {
@@ -42,14 +42,14 @@
   width: 1.6rem;
   height: auto;
   margin: 6px 0px 0px 9px;
-  fill: #9be7ff;
+  fill: var(--color-text);
   cursor: pointer;
 }
 
 .share .facebook svg:hover,
 .share .telegram svg:hover,
 .share .twitter svg:hover {
-  fill: var(--color-04);
+  fill: var(--color-accent);
 }
 
 article .share {

@@ -58,9 +58,9 @@ section ~ section {
 }
 .img_container .date div {
   margin-top: auto;
-  background-color: var(--theme_card-date-background);
-
+  background-color: var(--color-card-date-background);
   text-align: center;
+  color: var(--color-background);
 }
 
 .card_contain {
@@ -88,15 +88,15 @@ section ~ section {
 
 .card_tag a:link,
 .card_tag a:visited {
-  background: var(--theme_tag-background);
-  color: var(--theme_tag-default-text);
+  background: var(--color-tag-background);
+  color: var(--color-tag-text);
   opacity: 1;
 }
 
 .card_tag a:hover,
 .card_tag a:active {
   text-decoration: none;
-  color: var(--theme_tag-hover);
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 834px) {
@@ -128,7 +128,7 @@ section ~ section {
 
 //  section_header 
 .section_header {
-  border-bottom: 1px solid var(--theme_section-divider-line);
+  border-bottom: 1px solid var(--color-text);
   text-align: center;
   margin: 0px 0px 36px 0px;
   padding-bottom: 10px;

@@ -1,5 +1,5 @@
 header {
-  background: var(--theme_navbar-background);
+  background: var(--color-accent);
 }
 
 nav {
@@ -15,9 +15,10 @@ nav {
 nav .logo svg {
   //stroke: currentColor;
   fill: currentColor;
-  width: 2.7rem;
-  height: auto;
+  height: 2rem;
+  width: auto;
   vertical-align: middle;
+  margin-left: -0.5rem;
 }
 
 nav .main_nav {
@@ -29,32 +30,35 @@ nav .main_nav {
 nav .main_nav li {
   list-style-type: none;
   margin-left: 40px;
+  text-decoration: none;
 }
 
 nav .logo:link,
 nav .logo:visited,
 nav .main_nav li a:link,
 nav .main_nav li a:visited {
-  color: var(--theme_navbar-default-text);
+  color: var(--color-nav-text);
+  opacity: 0.9;
+  text-decoration: none;
 }
 
 nav .logo:hover,
 nav .logo:active,
 nav .main_nav li a:hover,
 nav .main_nav li a:active {
-  color: var(--theme_navbar-hover-active);
   text-decoration: none;
+  opacity: 1;
 }
 
 nav .main_nav li .active:link,
 nav .main_nav li .active:visited {
-  color: var(--theme_navbar-hover-active);
   font-weight: bold;
+  opacity: 1;
 }
 
 nav .main_nav li .active:hover,
 nav .main_nav li .active:active {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 834px) {
@@ -124,7 +128,7 @@ nav .main_nav li .active:active {
   }
   nav .main_nav-toggle {
     position: fixed;
-    background-color: var(--theme_navbar-background);
+    background-color: var(--color-accent);
     top: 0;
     left: 0;
     height: 100vh;

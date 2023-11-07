@@ -1,46 +1,51 @@
-// color palette & site color theme ===== version 2 dev =====
-
-// site color theme
+//color palette
 :root {
-  // not sure 
-  --theme_tagN: var(--color-04); //@homePageSection.scss
+  --color-text: #242424;
+  --color-background: #ffffff;
+  --color-accent: #0180d5;
+  --color-selection: #c8c8c8;
 
-  --theme_background: var(--color-02);
-  --theme_seletion: var(--color-05);
-  --theme_default-text: var(--color-01);
-  --theme_header: var(--color-04);
-  --theme_button-border: var(--color-04);
-  --theme_blockquote-left-border: var(--color-044);
+  --color-link: var(--color-accent);
+  --color-header: var(--color-accent);
+
+  --color-nav-text: var(--color-background);
+
+  --color-code-text: #836C28;
+  --color-code-background: #f9f9f9;
+  --color-code-border: #E5E5E5;
+
+  --color_keybord-text: var(--color-text);
+  --color_keybord-border: #00000042;
+
+  --color_blockquote-left-border: var(--color-accent);
+
+  --color_table-border: var(--color-text);
+
+  --color-card-date-background: #3d3d3d8c;
+
+  --color-tag-text: var(--color-background);
+  --color-tag-background: var(--color-accent);
+
+  --color-embeded-card-text: var(--color-text);
+  --color-embeded-card-time: var(--color-accent);
+  --color-embeded-card-summary-text: var(--color-text);
+  --color-embeded-card-background: var(--color-code-background);
+  --color-embeded-card-border: var(--color-code-border);
+  --color-embeded-card-background-mobile: var(--color-code-background);
+
+
+  --color_button-border: hsl(204, 99%, 75%); //not sure where this is
+  --theme_tagN: hsl(204, 99%, 75%); //not sure where this is
+
+  // old color palatte - need to clear out
   --theme_avatar-img-border: var(--color-17); //@byline.scss
 
   --theme_special-button-text: var(--color-01); //@shortcode_button.scss
   --theme_special-button-background: var(--color-11); //@shortcode_button.scss
   --theme_special-button-divider: var(--color-12); //@shortcode_button.scss
 
-  --theme_card-date-background: var(--color-07); //@homePageSection
-
-  //@em_card.scss
-  --theme-embeded-card-background: var(--color-13);
-  --theme-embeded-card-background-mobile: var(--color-16);
-  --theme-embeded-card-time: var(--color-14);
-  --theme-embeded-card-summary-text: var(--color-15);
-
-  --theme_buy-me-coffee-border: var(--color-01);
-  --theme_buy-me-coffee-background: var(--color-044);
-
-  --theme_link: var(--color-04);
-  --theme_section-divider-line: var(--color-01);
-
-  --theme_code: var(--color-01);
-  --theme_code-border: var(--color-03);
-  --theme_code-background: var(--color-066);
-
-  --theme_keybord: var(--color-01);
-  --theme_keybord-border: var(--color-03);
-
-  --theme_table-border: var(--color-01);
   
-  --theme_navbar-background: var(--color-066);
+  --theme_navbar-background: var(--color-044);
   --theme_navbar-default-text: var(--color-01);
   --theme_navbar-hover-active: var(--color-04);
 
@@ -48,20 +53,9 @@
 
   --theme_byline_link: var(--color-01);
 
-  --theme_tag-background: var(--color-10);
-  --theme_tag-default-text: var(--color-08);
-  --theme_tag-hover: var(--color-09);
-
-  --theme_footer-link: var(--color-01);
-  --theme_footer-link-hover-active: var(--color-04);
-  --theme_footer-background: var(--color-066);
-}
-
-//color palette
-:root {
-  --color-01: #ffffff;
+  --color-01: #242424;
   --color-15: #cacaca;
-  --color-02: #404040; //site background
+  --color-02: #ffffff; //site background
   --color-07: #3d3d3d8c;
   --color-13: #353535;
   --color-17: #363636c2;
@@ -72,59 +66,13 @@
   --color-08: #3d3935;
   --color-10: #ffe16b;
 
-  --color-04: #9bff9b; // navbar border
-  --color-044: #33d634; //googoraa navbar logo fill
+  --color-04: hsl(204, 99%, 75%); // navbar border
+  --color-044: hsl(204, 99%, 42%); //googoraa navbar logo fill
   --color-12: #6e99bd;
   --color-14: #41aaff;
-  --color-05: #611b5b;
+  --color-05: hsl(204, 99%, 50%);
   --color-11: #0068df;
   --color-06: #404040;
   --color-066: #1e1e1e; //navbar & footer background
 }
 
-// === theme specific ===
-header {
-  border-width: 3px;
-  border-left: 0px;
-  border-right: 0px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to right, 
-      var(--color-06),
-      var(--color-04), 
-      var(--color-06)
-    ) 0 0 1 0;
-}
-
-footer {
-  border-width: 3px;
-  border-left: 0px;
-  border-right: 0px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to right, 
-      var(--color-06),
-      var(--color-04), 
-      var(--color-06)
-    ) 1 0 0 0;
-}
-
-// googoraa nav logo fill transition
-nav svg path {
-  transition: fill .9s;
-} 
-
-nav svg:hover{
-  #inner_logo {
-    fill: var(--color-066);
-  }
-  #logo-border {
-    fill: var(--color-044);
-  }
-} 
-
-h1 {
-  color: var(--theme_header);
-}

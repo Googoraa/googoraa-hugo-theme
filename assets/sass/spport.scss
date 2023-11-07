@@ -1,0 +1,18 @@
+.support {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.support svg {
+    width: auto;
+    height: 2.5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.support svg:hover {
+    transform: translateY(-7px);
+}
+
+.support #supportFill {
+    fill: var(--color-accent);
+}

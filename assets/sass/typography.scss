@@ -1,5 +1,5 @@
 :root {
-  --font-ui: "Lato", "Ang DaunMao";
+  --font-ui: "Lato", "Khmer Sarmai Corner";
   --font-tag: "Nokora", "Lato";
   --font-codeB: "Code New Roman", "Ang DaunMao";
   --font-title: "Lato700", "Angkor Sovann Round_01";
@@ -259,6 +259,23 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  /* Khmer Sarmai Corner Khmer Font */
+  @font-face {
+    font-family: "Khmer Sarmai Corner";
+    src: url("../fonts/KhmerSarmaiCorner/Khmer-Sarmai-Corner-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Rage Italic Handwriting font */
+  @font-face {
+    font-family: "Rage Italic";
+    src: url("../fonts/RageItalic/RAGE.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 
 
 
