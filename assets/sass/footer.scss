@@ -181,8 +181,18 @@ footer .credit {
   align-items: center;
   opacity: 0.9;
 }
+#text-footer-mobile {
+  display: none;
+}
 
 @media screen and (max-width: 629px) {
+
+  #text-footer-desktop {
+    display: none;
+  }
+  #text-footer-mobile {
+    display: inline;
+  }
   footer .container .footMenu {
     flex-direction: column;
     align-items: center;
