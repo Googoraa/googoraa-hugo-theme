@@ -2,7 +2,9 @@
 
 <section>
   <h2 class="section_header">
-    {{if eq .Title "LINUX"}}
+    {{if eq .Title "ទន្តសាស្ត្រ"}}
+    {{ partial "svg/dentistry.svg" }} 
+    {{else if eq .Title "LINUX"}}
     {{ partial "svg/linux_icon.svg" }} 
     {{else if eq .Title "Programming"}}
     {{ partial "svg/programming.svg" }} 
