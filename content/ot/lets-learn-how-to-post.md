@@ -10,7 +10,7 @@ categories:
 author: dimorng
 disqus: "enable"
 
-draft: false
+draft: true
 
 f_image: img/learn-how-to-post-f-image.jpg
 ---
