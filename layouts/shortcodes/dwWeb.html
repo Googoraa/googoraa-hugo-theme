@@ -1,6 +1,6 @@
-<aside class="botton_container" style="margin-top: 20px;">
-    <a href="https://drive.google.com/uc?id={{ .Get 0 }}&export=download" target="_blank" class="button" style="padding-bottom:2px;">
-        <span id="icon_side">
+<aside title="ទាញយក {{ .Get 0 }}" class="botton_container">
+    <a href="{{ .Get 1 }}" target="_blank" class="button">
+        <span class="icon">
             <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 451.86" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 <metadata>
                  <rdf:RDF>
@@ -20,6 +20,6 @@
                 </g>
             </svg>
         </span>
-        <span id="text_side">ទាញ​យក​ពុម្ព​អក្សរ​</span>
+        <span class="text">{{ .Get 0 |truncate 30 }}</span>
     </a>
 </aside>

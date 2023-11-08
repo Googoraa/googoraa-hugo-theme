@@ -1,6 +1,6 @@
-<aside class="botton_container">
-    <a href="apt://{{ .Get 1 }}" target="_blank" class="button" style="background-color: #f33f00;">
-        <span id="icon_side">
+<aside title="ទាញយក {{ .Get 0 }} សម្រាប់​ install លើ Ubuntu based Distro" class="botton_container" style="--color-special-button-background:#f45219;">
+    <a href="{{ .Get 1 }}" target="_blank" class="button">
+        <span class="icon">
             <svg width="480.45" height="493.42" version="1.1" viewBox="0 0 480.45 493.42" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><metadata><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata>
                 <g id="ubuntu" transform="translate(-6.489)" fill="#fff">
                     
@@ -30,6 +30,6 @@
                 </g>
             </svg>
         </span>
-        <span id="text_side" style="border-left: solid #d8400b 1px;">Install {{ .Get 0 }} via Software Manager</span>
+        <span class="text">{{ .Get 0 |truncate 30 }}</span>
     </a>
 </aside>

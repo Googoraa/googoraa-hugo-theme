@@ -5,32 +5,29 @@ aside.botton_container {
 }
 
 aside.botton_container .button {
-    background-color: var(--theme_special-button-background) /*#1eb8ff*/;
+    background-color: var(--color-special-button-background);
     border-radius: 2px;
     cursor: pointer;
     display: block;
     text-decoration: none;
     border: none;
-    padding: 3px 10px 1px 10px;
+    padding: 3px 15px;
 }
 
 aside.botton_container .button:hover {
     opacity: 0.9;
 }
 
-aside.botton_container #text_side, #icon_side {
-    padding: 5px;
+aside.botton_container .icon {
+    padding-right: 4px;
 }
 
-aside.botton_container #icon_side svg {
+aside.botton_container .icon svg {
     vertical-align: -2.5px;
     height: 20px;
     width: auto;
 }
 
-aside.botton_container #text_side {
-    border-left: solid var(--theme_special-button-divider) /*#4595a3*/ 1px;
-    color: var(--theme_special-button-text);
-    padding-left: 11px;
-    padding-bottom: 2px;
+aside.botton_container .text {
+    color: var(--color-special-button-text);
 }

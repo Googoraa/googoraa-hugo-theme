@@ -1,6 +1,6 @@
-<aside class="botton_container">
-    <a href="{{ .Get 1 }}" target="_blank" class="button" style="background-color: #019801;">
-        <span id="icon_side">
+<aside title="ទាញយក {{ .Get 0 }} សម្រាប់​ install លើ Linux Mint ឬ Ubuntu based Distro" class="botton_container" style="--color-special-button-background:#019801;">
+    <a href="{{ .Get 1 }}" target="_blank" class="button">
+        <span class="icon">
             <svg width="51.885" height="51.524" version="1.1" viewBox="0 0 13.728 13.632" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                 <metadata>
                  <rdf:RDF>
@@ -18,6 +18,6 @@
                 </g>
             </svg>
         </span>
-        <span id="text_side" style="border-left: 1px solid #018001;">Install {{ .Get 0 }} via Software Manager</span>
+        <span class="text">{{ .Get 0 |truncate 30 }}</span>
     </a>
 </aside>

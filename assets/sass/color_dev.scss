@@ -33,6 +33,8 @@
   --color-embeded-card-border: var(--color-code-border);
   --color-embeded-card-background-mobile: var(--color-code-background);
 
+  --color-special-button-text: var(--color-background); //@shortcode_button.scss
+  --color-special-button-background: var(--color-accent); //@shortcode_button.scss
 
   --color_button-border: hsl(204, 99%, 75%); //not sure where this is
   --theme_tagN: hsl(204, 99%, 75%); //not sure where this is
@@ -40,9 +42,7 @@
   // old color palatte - need to clear out
   --theme_avatar-img-border: var(--color-17); //@byline.scss
 
-  --theme_special-button-text: var(--color-01); //@shortcode_button.scss
-  --theme_special-button-background: var(--color-11); //@shortcode_button.scss
-  --theme_special-button-divider: var(--color-12); //@shortcode_button.scss
+  
 
   
   --theme_navbar-background: var(--color-044);

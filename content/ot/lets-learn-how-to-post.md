@@ -3,14 +3,14 @@ title: "តោះ! រៀន​ post"
 date: 2021-02-28
 update: true
 
-tags: ["Jekyll", "tutorial", "markdown"]
+tags: ["tutorial", "markdown"]
 categories: 
   - ពីនេះពីនោះ
 
 author: dimorng
 disqus: "enable"
 
-draft: true
+draft: false
 
 f_image: img/learn-how-to-post-f-image.jpg
 ---
@@ -75,59 +75,59 @@ f_image: img/learn-how-to-post-f-image.jpg
 
 ## Shortcode of Download Botton
 
-### Download App from Offical or Trusted Website
+### Download file frome google drive
 
-{{< dwF `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
+{{< dwGdrive `​វិញ្ញាសាគណិតប្រលងគ្រូមធ្យម ២០១៨` `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
 
 ```
-{{</* dwF `google_drive_id_of_file` */>}}
+{{</* dwGrive `Text` `google_drive_id_of_file` */>}}
 ```
 
 ### Download pdf file
 
-{{< pdf `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
+{{< dwPdfGdrive `វិញ្ញាសាគណិតប្រលងគ្រូមធ្យម ២០១៨` `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
 
 ```
-{{</* pdf `google_drive_id_of_file` */>}}
+{{</* dwPdfGdrive `Document Title` `google_drive_id_of_pdf_file` */>}}
 ```
 
 * google_drive_id_of_file can be found in the link gotten from get-link command of drive.
 
 ### Download App from Offical or Trusted Website
 
-{{< dwFW LibreOffice `https://www.libreoffice.org/download/download/` >}}
+{{< dwWeb `LibreOffice` `https://www.libreoffice.org/download/download/` >}}
 
 ```
-{{</* dwFW <App name> `<website link>` */>}}
+{{</* dwWeb `Text` `download url` */>}}
 ```
 ### Install App from Software Manager
 
-{{< dwFSM GIMP gimp >}}
+{{< dwAppUbuntu GIMP gimp >}}
 
 ```
-{{</* dwFSM <App name> <package name> */>}}
+{{</* dwAppUbuntu <App name> <package name> */>}}
 ```
 
 ### Install App from Linux Mint Software Manager
 
-{{< dwFMS GIMP gimp >}}
+{{< dwAppLMint GIMP gimp >}}
 
 ```
-{{</* dwFMS <App name> <package name> */>}}
+{{</* dwAppLMint <App name> <package name> */>}}
 ```
 អ្នក​អាច​រក​ឈ្មោះ​ pagckage name search `App name linux mint` ក្នុង​ web browser ។
 
 ### Andoid App for Android Device
 
-{{< android `Flud` `https://play.google.com/store/apps/details?id=com.delphicoder.flud` >}}
+{{< dwAppAndriod `Flud` `https://play.google.com/store/apps/details?id=com.delphicoder.flud` >}}
 
 ```
-{{</* android `<App name>` `<playstore url>` */>}}
+{{</* dwAppAndriod `<App name>` `<playstore url>` */>}}
 ```
 
 ### Link to GitHub Page
 
-{{< GitHub `View Foliate GitHub Page` `https://github.com/johnfactotum/foliate/releases` >}}
+{{< GitHub `Foliate GitHub Page` `https://github.com/johnfactotum/foliate/releases` >}}
 
 ```
 {{</* GitHub `<text>` `link to GitHub page` */>}}
