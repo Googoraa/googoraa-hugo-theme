@@ -36,6 +36,11 @@
   --color-special-button-text: var(--color-background); //@shortcode_button.scss
   --color-special-button-background: var(--color-accent); //@shortcode_button.scss
 
+  --color-shortcode-tip-border: #ffe16b;
+  --color-shortcode-tip-title: #ca9c1a;
+  --color-shortcode-tip-background: var(--color-background);
+  --color-shortcode-tip-text: var(--color-shortcode-tip-title);
+
   --color_button-border: hsl(204, 99%, 75%); //not sure where this is
   --theme_tagN: hsl(204, 99%, 75%); //not sure where this is
 

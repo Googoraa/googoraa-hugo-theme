@@ -1,0 +1,13 @@
+<div class="tip">
+    <div class="snipplet-title">
+        <div class="icon">
+            {{ partial "svg/tip.svg" . }}
+        </div>
+        <div class="text">
+            {{ .Get 0 }}
+        </div>
+    </div>
+    <div class="tip-content">
+        {{ .Inner }}
+    </div>
+</div>
