@@ -109,12 +109,20 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 {{</* dwGrive `Text` `google_drive_id_of_file` */>}}
 ```
 
-### Download pdf file
+### Download pdf file frome google drive
 
 {{< dwPdfGdrive `វិញ្ញាសាគណិតប្រលងគ្រូមធ្យម ២០១៨` `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
 
 ```
 {{</* dwPdfGdrive `Document Title` `google_drive_id_of_pdf_file` */>}}
+```
+
+## Download Ms Word file frome google drive
+
+{{< dwWordGdrive `វិញ្ញាសាគណិតប្រលងគ្រូមធ្យម ២០១៨` `1cM67P8MbpK98WhOOnnu-QvFBUJDLopZJ` >}}
+
+```
+{{</* dwWordGdrive `Document Title` `google_drive_id_of_pdf_file` */>}}
 ```
 
 * google_drive_id_of_file can be found in the link gotten from get-link command of drive.

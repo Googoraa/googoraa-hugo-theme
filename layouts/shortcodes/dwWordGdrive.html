@@ -1,0 +1,8 @@
+<aside title="ទាញុយក {{ .Get 0 }}" class="botton_container">
+    <a href="https://drive.google.com/uc?id={{ .Get 1 }}&export=download" target="_blank" class="button" style="--color-special-button-background:#0060a5;">
+        <span class="icon">
+            {{ partial "svg/msword.svg" . }}
+        </span>
+        <span class="text" style="padding-left: 4px;">{{ .Get 0 |truncate 30 }}</span>
+    </a>
+</aside>
