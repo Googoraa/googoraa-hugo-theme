@@ -17,10 +17,10 @@ f_image: img/learn-how-to-post-f-image.jpg
 
 ## Embeded Card
 
-{{< card `/linux/digraph-khmer-vowel-solution-in-ubuntu-based-distro.md` >}}
+{{< card `dentistry\introduction-to-medical-terminology.md` >}}
 
 ```
-{{</* card `/linux/digraph-khmer-vowel-solution-in-ubuntu-based-distro.md` */>}}
+{{</* card `dentistry\introduction-to-medical-terminology.md` */>}}
 ```
 
 ## Link Shortcode that open target in new tab 
@@ -74,6 +74,17 @@ f_image: img/learn-how-to-post-f-image.jpg
 ```
 
 ## Shortcode of Download Botton
+
+### Embeded Google Map
+
+```
+{{</* gmap `gmap embeded url` `caption` */>}}
+```
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+{{< gmap `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1159158867263!2d104.9067419!3d11.5435418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e1721ece7d%3A0x3628bd91f8a09225!2sTechnical%20School%20for%20Medical%20Care!5e0!3m2!1sen!2skh!4v1699425266097!5m2!1sen!2skh` `ទីតាំងសាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល សាខាទី ២` >}}
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 ### Download file frome google drive
 
@@ -235,6 +246,8 @@ Markdown ជា​ភាសា​​ប្រើ​សម្រាប់​ស�
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
+{{< gmap `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.1159158867263!2d104.9067419!3d11.5435418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e1721ece7d%3A0x3628bd91f8a09225!2sTechnical%20School%20for%20Medical%20Care!5e0!3m2!1sen!2skh!4v1699425266097!5m2!1sen!2skh` `ទីតាំងសាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល សាខាទី ២` >}}
+
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 <div class="table">
@@ -244,3 +257,4 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 |dksk|dksk|
 
 <div>
+
