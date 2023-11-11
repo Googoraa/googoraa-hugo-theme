@@ -123,6 +123,12 @@ figure img {
   max-width: 670px;
   margin: 30px auto;
   display: block;
+
+}
+
+figure.round-border img {
+  border: 1px solid var(--color-code-border);
+  border-radius: 10px;
 }
 
 figure figcaption {

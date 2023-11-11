@@ -29,6 +29,14 @@ f_image: img/learn-how-to-post-f-image.jpg
 
 {{< /tip >}}
 
+```
+{{</* tip `title`  */>}}
+
+content in text or html
+
+{{</* /tip  */>}}
+```
+
 
 ## Embeded Card
 
@@ -74,10 +82,12 @@ f_image: img/learn-how-to-post-f-image.jpg
 ```
 ### Figure with caption
 
-{{< imgWCap how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window` `Font Installer Window` >}}
+{{< imgWCap how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window` `` >}}
+
+{{< imgWCap how-to-install-font-in-ubuntu-based-linux-1-min.png `Font installer window (round border)` `round-border` >}}
 
 ```
-{{</* imgWCap <image_file_name.extension> (`<image_alt_text>`) (`<image_caption>`) */>}}
+{{</* imgWCap <image_file_name.extension> `<image_caption&_alt_text>` `(round-border)` */>}}
 ```
 
 ### Figure without caption
