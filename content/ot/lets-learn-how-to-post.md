@@ -37,6 +37,18 @@ content in text or html
 {{</* /tip  */>}}
 ```
 
+## Quote Attribute
+
+```
+>Quote Text ...
+>{{</* quoteAttri `word (not link)` `word (link)` `link address`  */>}}
+```
+>**Clearance** (noun) [NOT TOUCHING]: the distance or space that is needed for one thing to avoid touching another thing: 
+> - It was difficult getting the piano through the doorway because we only had a clearance of a few centimetres.
+> - High vehicles should take an alternative route because of low clearance under the bridge.
+>
+>{{< quoteAttri `from` `Cambridge Dictionary` `https://dictionary.cambridge.org/dictionary/english/clearance` >}}
+
 
 ## Embeded Card
 
