@@ -1,0 +1,17 @@
+<div class="translate">
+    <div class="translate-title">
+        <div class="icon">
+            {{ partial "svg/tanslation_en.svg" . }}
+        </div>
+        <div class="text">
+            <span class="word">{{ .Get 0 }}</span>
+            <span class="speech">{{ .Get 1 }}</span>
+        </div>
+    </div>
+    <div class="translate-content">
+        {{ .Inner }}
+        <div class="attribution-container">
+            <span class="attribution">from <a rel="nofollow noopener noreferrer" target="_blank" href="{{ .Get 3 }}">{{ .Get 2 }}</a></span>
+        </div>
+    </div>
+</div>

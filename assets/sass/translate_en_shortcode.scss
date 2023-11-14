@@ -1,0 +1,56 @@
+.translate {
+    border: 3px solid var(--color-shortcode-translate-border);
+    border-radius: 10px;
+    background-color: var(--color-shortcode-translate-border);
+    margin-bottom: 20px;
+  }
+  
+  .translate .translate-title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 2px 10px 0px 10px;
+  }
+  
+  .translate-title svg {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin-bottom: 40%;
+  }
+  
+  .translate-title .text {
+    font-family: var(--font-title);
+    color: var(--color-shortcode-translate-title);
+  }
+  .translate .word {
+    font-weight: bold;
+  }
+  
+  .translate .speech {
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .translate .translation-icon-color {
+    fill: var(--color-shortcode-translate-icon);
+  }
+  
+  .translate .attribution {
+    font-style: italic;
+  }
+  
+  .translate .translate-content {
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--color-shortcode-translate-background);
+    color: var(--color-shortcode-translate-text);
+    padding: 15px 20px;
+  }
+  
+.translate .attribution {
+    font-size: 16px;
+}
+  
+.translate .attribution::before {
+    content: "―";
+  }

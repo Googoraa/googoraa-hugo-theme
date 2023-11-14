@@ -37,6 +37,28 @@ content in text or html
 {{</* /tip  */>}}
 ```
 
+## Dictionary English-English
+
+```
+{{</* translate_en `word` `speech [detail]` `Source` `Source Url` */>}}
+
+Meaning ...
+<ul>
+  <li>Example sentence.</li>
+</ul>
+
+{{</* /translate_en */>}}
+```
+{{< translate_en `Clearance` `(noun) [NOT TOUCHING]` `Cambridge Dictionary` `https://dictionary.cambridge.org/dictionary/english/clearance` >}}
+
+the distance or space that is needed for one thing to avoid touching another thing: 
+
+<ul>
+  <li>It was difficult getting the piano through the doorway because we only had a clearance of a few centimetres.</li>
+</ul>
+
+{{< /translate_en >}}
+
 ## Quote Attribute
 
 ```
